@@ -1,4 +1,6 @@
-# Qwik City App ⚡️
+# Qwik City App
+
+This is a starter template for building a Qwik City application.⚡️
 
 - [Qwik Docs](https://qwik.builder.io/)
 - [Discord](https://qwik.builder.io/chat)
@@ -38,12 +40,20 @@ Use the `npm run qwik add` command to add additional integrations. Some examples
 npm run qwik add # or `yarn qwik add`
 ```
 
-## Development
+## Getting Started
+
+### Installation
+
+Install the project's dependencies first:
+
+```shell
+npm install # or `yarn`
+```
 
 Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
 
 ```shell
-npm start # or `yarn start`
+npm run dev # or `yarn dev`
 ```
 
 > Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
@@ -57,6 +67,12 @@ npm run preview # or `yarn preview`
 ```
 
 ## Production
+
+To build for production, run:
+
+```shell
+npm run build # or `yarn build`
+```
 
 The production build will generate client and server modules by running both client and server build commands. The build command will use Typescript to run a type check on the source code.
 
