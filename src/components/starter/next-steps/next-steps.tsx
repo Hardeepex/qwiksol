@@ -33,7 +33,7 @@ export const GETTING_STARTED_STEPS = [
 export default component$(() => {
   const gettingStartedStep = useSignal(0);
 
-  useOnWindow(
+  useOnWindow$(
     "keydown",
     $((e) => {
       if ((e as KeyboardEvent).key === "Alt") {
@@ -64,14 +64,14 @@ export default component$(() => {
         />
       </div>
       {gettingStartedStep.value + 1 < GETTING_STARTED_STEPS.length ? (
-        <button class="button-dark" onClick$={() => gettingStartedStep.value++}>
+        <button class="button-dark" onClick$={$(() => gettingStartedStep.value++)}>
           Continue with Step {gettingStartedStep.value + 2} of{" "}
           {GETTING_STARTED_STEPS.length}
         </button>
       ) : (
         <button
           class="button-dark"
-          onClick$={() => (gettingStartedStep.value = 0)}
+          onClick$={$(() => (gettingStartedStep.value = 0))}
         >
           Re-Start
         </button>
