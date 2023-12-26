@@ -1,0 +1,3 @@
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
+
+// The rest of the file content goes here...
