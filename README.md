@@ -40,6 +40,20 @@ Use the `npm run qwik add` command to add additional integrations. Some examples
 npm run qwik add # or `yarn qwik add`
 ```
 
+## Additional Dependencies
+
+In addition to the default dependencies, you may need to install additional packages that are specific to your project's requirements. For instance, if your application interacts with GraphQL APIs, you might consider using Apollo Client.
+
+### Apollo Client
+
+Apollo Client is a comprehensive state management library for JavaScript that enables you to manage both local and remote data with GraphQL. It's especially useful in Qwik City applications where you want to fetch, cache, and modify application data, all while automatically updating your UI. To add Apollo Client to your project, use the following command:
+
+```shell
+npm install @apollo/client graphql
+```
+
+> Note: After installing Apollo Client, you will need to make modifications to your existing files to integrate Apollo Client. The specifics of these modifications will depend on the needs of your particular project and the structure of your codebase.
+
 ## Getting Started
 
 ### Installation
