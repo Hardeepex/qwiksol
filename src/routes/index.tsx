@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+import ProfessionalList from "~/components/ProfessionalList/ProfessionalList";
 import Counter from "~/components/starter/counter/counter";
 import Hero from "~/components/starter/hero/hero";
 import Infobox from "~/components/starter/infobox/infobox";
@@ -20,7 +21,7 @@ export default component$(() => {
           You can <span class="highlight">count</span>
           <br /> on me
         </h3>
-        <Counter />
+        <ProfessionalList />\n      <Counter />
       </div>
 
       <div class="container container-flex">
