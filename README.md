@@ -48,6 +48,9 @@ Install the project's dependencies first:
 
 ```shell
 npm install # or `yarn`
+
+# Install Apollo Client and its dependencies
+npm install @apollo/client graphql
 ```
 
 Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
